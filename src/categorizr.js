@@ -36,7 +36,8 @@
               : ua.match(/Opera/i) && ua.match(/Windows.NT.5/i) && ua.match(/HTC|Xda|Mini|Vario|SAMSUNG\-GT\-i8000|SAMSUNG\-SGH\-i9/i) ? 'mobile'
                 // Windows Desktop
               : ua.match(/Windows.(NT|XP|ME|9)/) && !ua.match(/Phone/i) || ua.match(/Win(9|.9|NT)/i) ? 'desktop'
-              : ua.match(/rv:\d*/i) && ua.match(/Trident/i) ? 'desktop' // IE 11
+              // Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko
+              : ua.match(/Windows/i) && ua.match(/rv:\d*/i) && ua.match(/Trident/i) ? 'desktop' // IE 11
                 // Mac Desktop
               : ua.match(/Macintosh|PowerPC/i) && !ua.match(/Silk/i) ? 'desktop'
                 // Linux Desktop

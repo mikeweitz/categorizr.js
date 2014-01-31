@@ -21,23 +21,14 @@ gulp.task('prepare', function() {
     .pipe(jshint.reporter('default'))
 		.pipe(concat("categorizr.js"))
     .pipe(gulp.dest('./'))
-    // .pipe(rename({suffix: '.min'}))
-    // .pipe(uglify())
-    // .pipe(gulp.dest('dist/assets/js'))
-    // .pipe(livereload(server))
     .pipe(notify({ message: 'Scripts task complete' }));
 });
-
-
+	
 gulp.task('minify', ['prepare'], function() {
   return gulp.src('categorizr.js')
-    // .pipe(jshint('.jshintrc'))
-    // .pipe(jshint.reporter('default'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
     .pipe(gulp.dest('./'))
-    // .pipe(gulp.dest('dist/assets/js'))
-    // .pipe(livereload(server))
     .pipe(notify({ message: 'Minify task complete' }));
 });
 
