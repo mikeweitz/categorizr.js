@@ -1,21 +1,37 @@
 {
-    "name": "categorizr"
-  , "description": "Device detection script to categorize devices as desktop, tv, tablet, or mobile."
-  , "version": "0.3.1"
-  , "homepage": "https://github.com/iamdustan/categorizr.js"
-  , "author": "Dustan Kasten <dustan@skookum.com> (http://twitter.com/iamdustan)"
-  , "contributors": [
-      "Brett Jankord <> (https://brettjankord.com)"
-    , "Jon Roes <> (http://blog.jroes.net)"
-    ]
-  , "keywords": ["ender", "browser", "node", "device detection", "responsive"]
-  , "main": "./categorizr.js"
-  , "repository": {
-      "type": "git"
-    , "url": "https://github.com/iamdustan/categorizr.js.git"
-  }
-  , "devDependencies": {
-      "smoosh": "*"
-    , "buster": "*"
+  "name": "categorizr",
+  "description": "Device detection script to categorize devices as desktop, tv, tablet, or mobile.",
+  "version": "0.3.2",
+  "homepage": "https://github.com/iamdustan/categorizr.js",
+  "author": "Dustan Kasten <dustan@skookum.com> (http://twitter.com/iamdustan)",
+  "contributors": [
+    "Brett Jankord <> (https://brettjankord.com)",
+    "Jon Roes <> (http://blog.jroes.net)",
+    "Michael Weitzman"
+  ],
+  "keywords": [
+    "ender",
+    "browser",
+    "node",
+    "device detection",
+    "responsive"
+  ],
+  "main": "./categorizr.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikeweitz/categorizr.js.git"
+  },
+  "devDependencies": {
+    "smoosh": "*",
+    "buster": "*",
+    "gulp-util": "~2.2.13",
+    "gulp": "~3.5.0",
+    "gulp-concat": "~2.1.7",
+    "gulp-rename": "~0.2.2",
+    "gulp-clean": "~0.2.4",
+    "gulp-notify": "~0.4.0",
+    "gulp-uglify": "~0.2.0",
+    "gulp-jshint": "~1.3.4",
+    "gulp-cache": "~0.1.1"
   }
 }
